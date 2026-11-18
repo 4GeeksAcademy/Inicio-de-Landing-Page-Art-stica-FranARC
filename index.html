@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Art | Artista Plástico y Visual</title>
+    <!-- Meta descripción para SEO -->
+    <meta name="description" content="Sitio oficial de Alejandro Art, artista plástico contemporáneo. Descubre su trayectoria, obras y próximas exposiciones.">
+    
+    <!-- Script de Tailwind CSS (Aprobado por el reto, sin frameworks de JS adicionales) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Schema.org estructurado en JSON-LD para SEO y buscadores -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VisualArtsEvent", /* O Artist, según prefieras enfocarlo */
+      "name": "Exposición de Arte Contemporáneo",
+      "startDate": "2026-06-15T19:00",
+      "location": {
+        "@type": "Place",
+        "name": "Galería de Arte Central",
+        "address": "Calle Principal 123, Madrid"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+
+    <!-- 1. BARRA DE NAVEGACIÓN (Semántica y Accesible) -->
+    <header role="banner" class="fixed top-0 left-0 w-full bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-800">
+        <nav role="navigation" aria-label="Menú principal" class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#inicio" class="text-xl font-bold tracking-wider uppercase text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                Alejandro Art
+            </a>
+            <ul class="flex space-x-6 text-sm font-medium">
+                <li><a href="#sobre-mi" class="hover:text-amber-400 transition-colors">Sobre mí</a></li>
+                <li><a href="#trayectoria" class="hover:text-amber-400 transition-colors">Trayectoria</a></li>
+                <li><a href="#presentaciones" class="hover:text-amber-400 transition-colors">Próximas Presentaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main role="main" id="inicio">
+        
+        <!-- SECCIÓN 1: PORTADA / HERO (Ocupa toda la pantalla) -->
+        <section aria-labelledby="hero-title" class="h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+            <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                Arte que desafía la percepción
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-8">
+                Explora el universo visual, las texturas y la reinterpretación moderna del arte plástico.
+            </p>
+            <a href="#sobre-mi" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-semibold px-6 py-3 rounded-lg shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-400">
+                Conoce mi obra
+            </a>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE MÍ -->
+        <section id="sobre-mi" aria-labelledby="about-title" class="h-screen flex flex-col justify-center max-w-4xl mx-auto px-6">
+            <h2 id="about-title" class="text-3xl font-bold mb-6 border-l-4 border-amber-500 pl-4">Sobre Mí</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                Soy un artista visual apasionado por la fusión entre el óleo tradicional y las nuevas corrientes digitales. Mi trabajo busca conectar la emoción humana con geometrías abstractas.
+            </p>
+        </section>
+
+        <!-- SECCIÓN 3: TRAYECTORIA -->
+        <section id="trayectoria" aria-labelledby="trayectoria-title" class="h-screen flex flex-col justify-center max-w-4xl mx-auto px-6">
+            <h2 id="trayectoria-title" class="text-3xl font-bold mb-6 border-l-4 border-amber-500 pl-4">Trayectoria</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li><strong class="text-amber-400">2024:</strong> Exposición individual "Ecos del Silencio" en Galería Moderna.</li>
+                <li><strong class="text-amber-400">2022:</strong> Premio Nacional de Pintura Joven.</li>
+                <li><strong class="text-amber-400">2020:</strong> Primeros pasos en muestras colectivas internacionales.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 4: PRÓXIMAS PRESENTACIONES -->
+        <section id="presentaciones" aria-labelledby="pres-title" class="h-screen flex flex-col justify-center max-w-4xl mx-auto px-6">
+            <h2 id="pres-title" class="text-3xl font-bold mb-6 border-l-4 border-amber-500 pl-4">Próximas Presentaciones</h2>
+            <article class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                <h3 class="text-xl font-semibold text-amber-400 mb-2">Exposición Colectiva: Horizontes</h3>
+                <p class="text-gray-300 mb-2"><time datetime="2026-06-15">15 de Junio de 2026</time> — Galería de Arte Central, Madrid.</p>
+                <p class="text-sm text-gray-400">Una muestra que reúne a los talentos emergentes más destacados del panorama actual.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- 3. PIE DE PÁGINA -->
+    <footer role="contentinfo" class="bg-gray-950 py-8 text-center text-gray-500 text-sm border-t border-gray-800">
+        <p>&copy; 2026 Alejandro Art. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
